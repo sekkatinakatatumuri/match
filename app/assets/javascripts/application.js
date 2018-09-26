@@ -10,6 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// require_tree .で読み込むものは、
+// jquery3などのコードが読み込まれてからでないとエラーが起きる順番も重要
 //= require rails-ujs
 //= require turbolinks
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
 //= require_tree .
