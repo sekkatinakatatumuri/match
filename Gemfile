@@ -62,3 +62,6 @@ gem 'jquery-rails'
 
 # Font-Awesome Sass gem for use in Ruby/Rails projects
 gem "font-awesome-sass"
+
+# Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
+gem 'carrierwave', '~> 1.0'
