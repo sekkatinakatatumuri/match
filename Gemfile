@@ -59,3 +59,6 @@ gem 'devise'
 # Bootstrap 4 rubygem for Rails / Sprockets / Hanami / etc
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
+
+# Font-Awesome Sass gem for use in Ruby/Rails projects
+gem "font-awesome-sass"
