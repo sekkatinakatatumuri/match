@@ -1,4 +1,4 @@
- $(document).on "change", "#file_photo", (e) ->
+$(document).on "change", "#file_photo", (e) ->
   if e.target.files and e.target.files[0]
     reader = new FileReader
     reader.onload = (e) ->
