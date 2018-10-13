@@ -1,8 +1,8 @@
 class ImgNameUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
+  # include CarrierWave::RMagick
   # リサイズしたり画像形式を変更するのに必要
-  include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+  include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   storage :file
