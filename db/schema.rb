@@ -13,11 +13,16 @@
 ActiveRecord::Schema.define(version: 20181013135942) do
 
   create_table "chat_messages", force: :cascade do |t|
+    t.integer "chat_room_id", null: false
+    t.integer "user_id", null: false
+    t.string "message", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "chat_room_users", force: :cascade do |t|
+    t.integer "chat_room_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +33,9 @@ ActiveRecord::Schema.define(version: 20181013135942) do
   end
 
   create_table "reactions", force: :cascade do |t|
+    t.integer "to_user_id", null: false
+    t.integer "from_user_id", null: false
+    t.integer "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
